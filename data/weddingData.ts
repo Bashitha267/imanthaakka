@@ -50,8 +50,8 @@ export interface WeddingData {
 }
 
 export const defaultWeddingData: WeddingData = {
-  groomName: "Mark",
-  brideName: "Sarah",
+  groomName: "Ama",
+  brideName: "Madhusanka",
   weddingTitle: "WEDDING",
   subTitle: "WE ARE GETTING MARRIED",
   quote: "Love is composed of a single soul inhabiting two bodies.",
@@ -100,7 +100,7 @@ export const defaultWeddingData: WeddingData = {
   contact: {
     phone: "+94 77 123 4567",
     whatsapp: "+94771234567",
-    email: "markandsarah@example.com"
+    email: "amaandmadhusanka@example.com"
   },
   rsvpDeadline: "August 10, 2026"
 };

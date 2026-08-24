@@ -266,9 +266,9 @@ const WeddingCalendar = ({ data, title }: { data?: WeddingData, title?: string }
   const daysArr = Array.from({ length: daysInMonth }, (_, i) => i + 1);
   const blanksArr = Array.from({ length: startDay }, (_, i) => i);
 
-  const eventTitle = `${data?.groomName || 'Mark'} & ${data?.brideName || 'Sarah'}'s Wedding`;
+  const eventTitle = `${data?.groomName || 'Ama'} & ${data?.brideName || 'Madhusanka'}'s Wedding`;
   const eventLocation = data?.location?.name ? `${data.location.name}, ${data.location.address}` : 'Wedding Venue';
-  const eventDescription = `Join us in celebrating the wedding of ${data?.groomName || 'Mark'} & ${data?.brideName || 'Sarah'}!`;
+  const eventDescription = `Join us in celebrating the wedding of ${data?.groomName || 'Ama'} & ${data?.brideName || 'Madhusanka'}!`;
 
   const handleDownloadIcs = () => {
     downloadIcsFile({
@@ -496,7 +496,7 @@ const WeddingRSVP = ({ data }: { data?: WeddingData }) => {
   };
 
   const handleWhatsAppRsvp = () => {
-    const groomBride = `${data?.groomName || 'Mark'} & ${data?.brideName || 'Sarah'}`;
+    const groomBride = `${data?.groomName || 'Ama'} & ${data?.brideName || 'Madhusanka'}`;
     const phone = data?.contact?.whatsapp?.replace(/[^0-9]/g, '') || '94771234567';
     const msg = encodeURIComponent(
       `Hello ${groomBride}! I would love to RSVP for your wedding:\nName: ${formData.name || 'Guest'}\nContact: ${formData.contact || 'N/A'}\nAdults: ${formData.adults}\nChildren: ${formData.children}`
@@ -889,7 +889,7 @@ export default function WeddingWalkTemplate({ data = defaultWeddingData }: { dat
                   letterSpacing: '6px',
                   fontWeight: 700
                 }}>
-                  {data?.groomName || 'Mark'} & {data?.brideName || 'Sarah'}
+                  {data?.groomName || 'Ama'} & {data?.brideName || 'Madhusanka'}
                 </h2>
                 <div className={`bounce-soft ${THEME.fontBody}`} style={{
                   fontSize: '0.8rem',
@@ -928,7 +928,7 @@ export default function WeddingWalkTemplate({ data = defaultWeddingData }: { dat
                       {data?.subTitle || 'WE ARE GETTING MARRIED'}
                     </div>
                     <h2 className={THEME.fontDisplay} style={{ fontSize: 'clamp(2rem, 8vw, 3rem)', color: THEME.dark, textShadow: '0 4px 15px rgba(0,0,0,0.5)', letterSpacing: '4px' }}>
-                      {data?.groomName || 'Mark'} & {data?.brideName || 'Sarah'}
+                      {data?.groomName || 'Ama'} & {data?.brideName || 'Madhusanka'}
                     </h2>
                   </div>
                 </Reveal>
