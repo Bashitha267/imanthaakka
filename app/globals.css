@@ -3,6 +3,7 @@
 :root {
   --wedding-gold: #D4AF37;
   --wedding-gold-light: #F1E5AC;
+  --wedding-maroon: #800000;
   --wedding-cream: #FAF7F2;
   --wedding-dark: #1A1A1A;
 }
@@ -14,7 +15,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  background-color: var(--wedding-cream);
+  background-color: #000000;
   color: #ffffff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -69,7 +70,13 @@ html, body {
 }
 
 .desktop-bg-wrapper {
-  background-color: #FAF7F2;
-  background-image: radial-gradient(#e3ded4 1px, transparent 1px);
+  background-color: #000000;
+  background-image: radial-gradient(#222222 1px, transparent 1px);
   background-size: 24px 24px;
+}
+
+.theme-poruwa {
+  background-color: #0a0a0a !important;
+  background-image: radial-gradient(rgba(212, 175, 55, 0.12) 1px, transparent 1px) !important;
+  background-size: 28px 28px !important;
 }
